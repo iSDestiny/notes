@@ -1,0 +1,136 @@
+Important Notes:
+**Always set a max-width rather than width for text to make it responsive**
+
+Stuff to Memorize:
+- Removes the bullet points: list-style: none
+- Removes the border on buttons: outline: none
+- Space between lines: line-height: xx
+- Center Element: margin: auto
+- Margins can be negative alters the positions of self: margin: -20 -50
+
+== Flexbox ==
+
+
+== Media Queries ==
+@media(max-width: 500px) // 500px is a good breakpoint for mobile devices
+This media query only gets triggered when the viewport width is <= 500px.
+
+@media(min-width: 500px)
+This media query only gets triggered when the viewport width is >= 500px.
+For mobile first approaches you would usually use min-width types of media queries and just
+have your normal css be your mobile view
+
+@media(min-width: 501px) and (max-width: 768)
+Triggered when 501px <= viewport width <= 768
+
+Can also use max/min height for stuff like landscape mode if you wish to configure your website/app for it
+
+Common Breakpoints:
+- Smartphones: <=500px
+- Tablets: 501px-768px
+- Normal: 769px-1200px
+- Widescreen: >1200px
+
+
+== Display None vs visibility hidden ==
+The different between display: none and visibility: hidden is that for display: none, the element
+completely goes away but for visibility:hidden it just invisible but it still takes up its original space.
+
+== Position Values ==
+Positions:
+- Static: the default. Not affected by tblr (top bottom left right)
+- Relative: affected by tblr, moved from its original postion
+- Absolute: same as relative but uses its parent element as the original (parent must be relative!)
+- Fixed: positioned relative to the viewport
+- Sticky: similar to fixed but can can stick to a direction
+
+z index determines what appears closer to you
+These positions other than fixed and sticky aren't really used in modern css as it is not responsive,
+instead one would just simply use css grid or flex box
+
+== Block and Inline Block ==
+You can't use margin: auto on an inline element to center it, you have to convert it to a block level
+using display: block.
+
+You can't set width on an inline element you have to convert it to an inline-block if you wish to
+still have it be horizontal but be able to set width
+
+== Font ==
+** Default Font: 16px **
+
+== Units ==
+- px: pixels
+- em: a multiplier based on the parent element (ex: parent = 16px, 3em is 3 * 16px)
+- rem: a multiplier of the root element (default is 16px, 4rem is 4 * 16px)
+- %: the % of space to consume is based on the parent element or container;
+- vw/vh: width based on width/height of the viewport
+
+**NOTE: For responsiveness, always prefer to use rem as it is a direct multiplier of the root element always**
+
+== CSS Reset ==
+A css reset is when you overwrite the default configuration such as the default font, margins, padding, etc.
+To do so use the * selector which selects every and set what you want to reset.
+
+[css]
+* {
+    margin: 0;
+    padding: 0;
+}
+[end]
+
+== Box Sizing ==
+When you add padding to an element, by default it actually adds to the overall width or height of the element.
+Lets say you had a width of 500px and you add a padding of 200px then the overall width would be 700px
+not 500px. In order to have a fixed width and for the padding to not add to the width you would
+have to set a border-box box sizing. By doing this the padding pushes the content inside as expected
+without altering the width.
+
+[css]
+* {
+    box-sizing: border-box;
+}
+
+.something {
+    width: 500px;
+    padding: 200px;
+}
+[end]
+
+
+== Links and Buttons ==
+anchor tags and buttons are inline elements
+In order to get the pointer on a button like links use cursor: pointer
+
+
+Link States Selectors:
+- hover: a:hover
+- visited: a:visited
+- when you click: a:active
+- visited: a:visited
+
+
+
+
+== General Shortcuts ==
+
+[css]
+.paddingAndMargins {
+    /* Padding and margin: top right bottom left */
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+
+    /* vertical horizontal */
+    padding: 10px 20px;
+    margin: 10px 20px;
+
+    /* all sides */
+    padding: 20px;
+    margin: 20px;
+}
+
+.border {
+    /* width style color for all sides (Can be specific for side)*/
+    border: 50px solid #FFFFFF;
+    border-top: 50px solid #FFFFFF;
+}
+[end]
