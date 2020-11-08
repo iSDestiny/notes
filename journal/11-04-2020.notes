@@ -1,0 +1,10 @@
+[2020-11-04]
+
+**11:52PM WED. 11/4/2020**
+Finished 3 modules today. I learned a lot about RESTful APIs and configured my application to be
+a more correct implementation as of a RESTful API. I got rid of the user sessions and utilized JSON
+web tokens for authentication and authorization so I had to tweak a lot of my logic on both frontend
+and backend. I also changed the way I handled errors since I needed to send the appropriate error
+code when I caught an error back to the client. Other than that, I learned about async/await and
+how much cleaner it is compared to the typical javascript promise chains, I will instead use these
+going forward.

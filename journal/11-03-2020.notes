@@ -1,0 +1,19 @@
+[2020-11-03]
+
+**12:11AM TUE. 11/3/2020**
+Finished 3 modules today for my node.js course. First, I learned how to serve pdf files from the server
+side to the client. In my project it now has a link to an invoice pdf in the orders view that contains
+information about the specific order. Second, I learned the difference between preloading data and
+streaming data. When you preload data in the server that means that the data that is preloaded will
+all be stored in the memory which can cause problems like a memory overflow and just general slowness of
+sending a response back to the client. On the other hand, streaming data eliminates these problems as
+instead of storing all of it in memory it will only store one block at a time in memory, serving the
+data bit by bit to the client until it serves everything. Third, I learned how to generate pdf files
+programmatically in node.js which I then save in the server file system and serve to the client by using
+a 3rd party package called pdfkit. Lastly, I implemented pagination into my application which was quite
+simple. Instead of doing it with page buttons like how my instructor did it, I decided to implement
+infinite scroll instead, where I fetch the next page when I hit the bottom of the view. I had to do
+my own research in order to implement this and learned about stuff I have never used before in React
+such as the useRef and useCallback hooks in react. I also learned about IntersectionObserver, this
+allowed how to tell when a user reaches the bottom of the screen, in other words when the last item
+of the list enters the viewport (screen) of the user. 

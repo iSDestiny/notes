@@ -1,0 +1,14 @@
+[2020-10-29]
+
+**1:33PM THU. 10/29/2020**
+Finished eating and doing other activities, will now start coding for the rest of the day.
+
+**11:40PM THU. 10/29/2020**
+Finished one and a half modules in my Node.js Udemy course. In the first module that I completed,
+I learned a lot about how cookies and sessions worked. With the knowledge I learned in the first module
+and half of the other module I implemented a working registration and login form on the course project.
+Instead of the web app only working with some dummy user it now supports user registration and login with
+password encryption. I also changed how the web app works whether a user is authenticated or not.
+If a user is authenticated they can only see products and specific product details, they cannot add,
+delete, edit, or add products to cart. Validation is still in progress though and will be implemented
+once I finish a later module.

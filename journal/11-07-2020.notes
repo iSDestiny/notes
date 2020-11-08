@@ -1,0 +1,23 @@
+[2020-11-07]
+
+**10:01PM SAT. 11/7/2020**
+Learned a lot about the benefits of Typescript today, both in the backend and frontend.
+By using Typescripts if your code compiles then it has a higher chance of having no bugs compared
+to javascript. It saves you a lot of time because it forces you to write better code since the language
+is now typed. This means that your code will receive as input exactly what it expects if the code compiles.
+
+I also watched a couple of youtube videos on specific react hooks that I don't really use. I learned
+a lot about custom react hooks and how helpful they are. By using them it eliminates the need to use
+higher order components (HOCs) and render props. This is very useful because these two are very annoying
+to setup. I actually noticed in the project that I did during the node course I could have utilized custom
+react hooks to save myself more lines of code and make it more readable. Specifically I could have
+created a hook which did all the data fetching from the backend for me. I also learned how to really
+use useCallback and useMemo. useCallback takes a function as its input and returns that same funtion.
+It's functionality is to keep the function passed into it in memory so it doesn't get recreated every
+time component it belongs to is rendered. That means it only gets created on the first render and
+recreated only when one of it's dependencies change. This is very useful for when the function is
+used as a dependency of another hook such as useEffect. useMemo has the same functionality as useCallback
+but instead of returning a function it returns what the function passed into it returns. It is useful
+when a component is a dependency itself. 
+
+Other than that, I also started my CSS course, I am relearning the basics just to refresh my memory

@@ -1,0 +1,20 @@
+[2020-10-30]
+
+**11:38PM FRI. 10/30/2020**
+Completed 3 modules today for my Udemy node.js course. I learned a lot from these 3 modules and
+made a lot of progress on the course project. In the first module I learnt what cross site request
+forgery was (CSRF) and why it is important to configure your web app to defend against such attacks.
+Using what I learnt in that module I utilized various 3rd party libraries to add CSRF protection in my
+web app to make it CSRF proof. I also added user feedback to my login and registration forms in my project
+to let them know whether they failed to register or failed to login and why they failed in doing so.
+
+In the second module I learned about how to send emails programmatically in the Node.js backend.
+For this I used a 3rd party emailing service, SendGrid, to send my emails. I used a 3rd party package
+called nodemailer to make it easy to integrate sending emails with SendGrid a breeze.
+
+Finally, in the 3rd module, I learned how to implement a password reset feature. With this module I
+added a password reset link in my login page that takes the user to a password reset form where they
+can input their email. Node will then verify this email and send the user an email that contains a
+special link that expires in 1 hour where they can set their new password. During this module I also
+changed how the admin products page worked. It now correctly displays the products that the specific
+user is allowed to edit and delete.

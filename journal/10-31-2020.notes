@@ -1,0 +1,9 @@
+[2020-10-31]
+
+**11:50PM SAT. 10/31/2020**
+Finished one module today on my node.js course. Today I learned why validation of user input is
+important. You don't want users to send incorrect input to the server and it is important to get
+input in the way you expect it, such as emails being valid emails (i.e. test@test.com). I also learned
+that validation on the server side (node.js) is what really matters and client side validation is nice
+but optional since the user can just disable JavaScript to bypass this. I implemented authorization for
+the login, signup, add product, and edit product pages. 

@@ -1,0 +1,18 @@
+[11-06-2020]
+
+**4:31AM FRI. 11/6/2020**
+Finished my node course today. Deployed the project that I was working on at the same time as the project.
+I deployed the backend to heroku and the frontend to netlify. I ran into a lot of problems deploying the
+backend to heroku and some problems I have not fixed yet. The problems I faced were setting the appropriate
+environment variables and user generated files. I learned that heroku does not have a persistent data
+storage so in order for user generated files to be saved in the backend I would have to use some could
+of cloud provider to store them such as amazon S3 or gcp storage. Both options require a little money
+but since I not really 100% done with the project I will refrain from configuring this now to save money.
+On the other hand, deploying the frontend was very easy with netlify. All I had to do was connect my
+netlify account to my github repo and set my environment variables and build script and netlify would
+deal with everything for me. Other than deploying I also learned a lot about unit testing with Node.js.
+For unit testing you use the combination of mocha, chai, and sinon. Mocha for the actual testing
+environment, chai for assertion logic and sinon to set stubs for isolated testing. Starting tomorrow
+I plan to start a new udemy course, it will be on CSS. My CSS skills is the number one thing holding
+me back right now and I would love to have good looking web apps rather than depend on CSS frameworks
+like material ui.

@@ -1,0 +1,13 @@
+[2020-11-02]
+
+**12:21AM MON. 11/2/2020**
+Finished 1 module and a half today. Learned a lot about error handling in node and the different
+types of errors that can happen. One type of error are expected errors, expected errors are errors
+such as incorrect user input or an unauthorized user trying to do an action they can't do. The other
+type of error are errors like network or database errors that we can't be expected to happen in normal
+circumstances. For the expected errors, my project already deals with them through validation checks and
+user feedback for them through the forms. I also made it so when the backend catches an error that is not
+expected I would send back a 5xx error code and my frontend would catch it and display an error page
+that explains that something went wrong on the server side. Other than error handling I also learned
+about how to upload files to the backend which I used for uploading images instead of having to input
+an image URL all the time.

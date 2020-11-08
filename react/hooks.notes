@@ -1,0 +1,39 @@
+-= useCallback =-
+
+useCallback is a hook that is rarely use but it is important to know when to use it because for specific
+situations it is basically required.
+
+[javascript]
+
+// Component1
+const myFunc = useCallback((arg1, arg2, etc) => {
+    // do stuff ...
+}, [])
+
+// Component2
+const {myFunc} = props;
+useEffect(() => {
+    myFunc(1,2,3);
+}, [myFunc])
+
+[end]
+
+In the example above the useEffect gets fired every time myFunc is created or changed. If myFunc
+did not utilize useCallback in this situation then myFunc would get recreated every time Component1
+is rerendered which is not what we want because if this happens then useEffect gets fired off
+everytime Component1 is rerendered. By using useCallback it eliminates this problem as it will save
+the function on the first render and will not recreate it for future rerenders.
+
+-= useMemo -=
+Very similar in functionality as useCallback but it does not return a function. Same as useCallback
+it takes in a function as its input but instead of return that function it calls that function and returns
+the end value. You can use useMemo is similar situations as useCallback, it does the same thing and that is
+to memoize something so it doesn't get recreated every rerender but instead of a function it returns a value
+which can be any type like an array, number, string, object, etc. NOTE: if the value that the
+function returns is a function then it works.
+
+-= Custom Hooks =-
+By using custom hooks you can elimnate the needs for higher order components (HOCs) and render
+props which are both quite complex to implement compared to the simplicity of just using a custom hook.
+One example of a custom hook would be a useHTTP hook which deals with all the logic for fetching your
+data from some kind of backend.

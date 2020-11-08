@@ -1,0 +1,27 @@
+=- Important node libraries -=
+
+
+General:
+crypto - password reset
+bcryptjs - encrypting passwords
+nodemailer - mailing
+express-validator - server side validation
+csurf - csrf protection
+mongoose - mongodb ODM
+session - express-session
+cors - cors
+body-parser - parsing
+multer - file parsing
+helmet - secure headers (production)
+compressor - compressor middleware
+morgan - request logging middleware
+
+Testing:
+mocha-unit testing
+chai-assertion
+sinon-stubs
+
+SSL:
+**windows must install openssl manually**
+linux/mac: built in
+For production: use ssl certificate from a known provider instead of generating your own
