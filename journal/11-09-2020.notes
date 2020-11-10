@@ -1,0 +1,17 @@
+[2020-11-08]
+
+Got quite far in my css course the past 2 days. Reviewed the basics quite and and learned a lot of minor but
+important things along the way too such as CSS resets, and the box-sizing: border box property and why you
+should always set it in your CSS reset along with resetting your margin and padding. By default padding
+actually adds to the overall width and height of the component rather than squishing the component in, which
+is not desired. To get the desired behavior you one set box-sizing: border. I also learned that
+with inline elements you can't use margin: auto to automatically center it you must change it's display
+to be a block level element. You also can't set the width of an inline element either which I never knew,
+to keep it inline but allow it to use block element properties you must set the display to inline:flex or just
+use flexbox. I also learned a lot of new things about flex box too such as the flex grow and align-self which
+I never really took advantage of in the past since I never realized they existed. I usually only used
+a flex container for justify and alignitems and alignself. From doing a lot of pure css I realized how
+much more work you have to put in to make all your custom components compared to using component libraries like
+MaterialUI and Bootstrap. While it is a good learning experience I don't enjoy css that much to do everything
+from scratch. In a real project that I will do for myself in the near future I will definitely just keep on
+using MaterialUI because it just saves me a lot of time.

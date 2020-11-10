@@ -1,15 +1,56 @@
-Important Notes:
+== Important Notes ==
 **Always set a max-width rather than width for text to make it responsive**
 
-Stuff to Memorize:
+== Stuff to Memorize ==
 - Removes the bullet points: list-style: none
 - Removes the border on buttons: outline: none
 - Space between lines: line-height: xx
 - Center Element: margin: auto
 - Margins can be negative alters the positions of self: margin: -20 -50
+- Insert content after x element: x::after
+- Insert content before x element: x::before
+- Change input outline: input:focus {outline-color: color}
+- Remember box sizing: box-sizing: border-box
 
 == Flexbox ==
 
+flex-direction:
+flex-direction determines the main axis. By default the direction is row that means the
+main axis is on the x axis and the cross axis is the y axis.
+
+justify-content and align-items:
+justifycontent defines the alignment along the *main* axis while align-items defines the behavior
+for how flex items are laid out along the *cross* axis
+
+flex-wrap:
+By default flex items will all try to fit into one line, can change this by using
+flex-wrap. (nowrap | wrap | wrap-reverse)
+
+align-self:
+Can specifically target a flex item to change how it is aligned by using align-self
+
+flex-shrink:
+By default flex items all shrink equally in order to fit into the viewport, by setting a specific
+flex item's flex-shrink to 0 it stops this behavior.
+
+flex-grow:
+Can set on a specific flex item. Fiils up the rest of the space of the container. By setting different
+numbers of flex-grow between different flex items of a flex container then these items will take
+up different widths of the container, the higher the number the most space they will take up.
+
+flex-basis:
+Sets the width ratio of a flex item compared to other items
+
+*Most of the time only flex-grow property is used because usually can just use media queries to stack items*
+
+Shorthand:
+[css]
+    flex-container {
+        display: flex;
+        /* grow shrink basis */
+        flex: 1 0 200px;
+    }
+[end]
 
 == Media Queries ==
 @media(max-width: 500px) // 500px is a good breakpoint for mobile devices
