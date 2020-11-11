@@ -1,0 +1,38 @@
+[2020-11-10]
+
+Did not make much progress on my css course today due to research on topics I was interested
+in such as Typescript in react and node.js and also styled components. After watching many
+youtube videos and reading several articles I am now convinced to try out Typescript for my
+next real project, maybe both in the frontend with react and the backend with node but at the
+very least I will try it with node. I was also playing around with styled components and decided
+to remake the website that I worked on along the css course with react and styled-components. From
+doing so I learned that I liked using styled-components a lot more than basic css or sass. I am a big
+fan of the component architecture of styled components. One thing I was confused on was how to organize
+my files along with styled components and after doing my research I decided on keeping all my components that
+would be displayed as their own page into a page folder and having them be in a folder of their own.
+For example the layout would be something like...
+
+src
+├── pages
+│   ├── Header
+│   │   ├── Logo.js
+│   │   ├── Title.js
+│   │   ├── Subtitle.js
+│   │   └── index.js
+│   └── Footer
+│       ├── List.js
+│       ├── ListItem.js
+│       ├── Wrapper.js
+│       └── index.js
+├── shared
+│   ├── Button.js
+│   ├── Card.js
+│   ├── InfiniteList.js
+│   ├── EmojiPicker
+│   └── Icons
+└── index.js
+
+I also learned about how index.js works for the first time today. By having a file named index.js in your
+folder and having all your export logic in the file you can omit having to do your imports like:
+import About from './About/About' instead you can just do './About'. I will definitely be taking
+advantage of this moving forward.

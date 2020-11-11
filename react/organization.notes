@@ -1,0 +1,24 @@
+Organize projects utilizing styled components to something similar to this:
+
+src
+├── App
+│   ├── Header
+│   │   ├── Logo.js
+│   │   ├── Title.js
+│   │   ├── Subtitle.js
+│   │   └── index.js
+│   └── Footer
+│       ├── List.js
+│       ├── ListItem.js
+│       ├── Wrapper.js
+│       └── index.js
+├── shared
+│   ├── Button.js
+│   ├── Card.js
+│   ├── InfiniteList.js
+│   ├── EmojiPicker
+│   └── Icons
+└── index.js
+
+By having an index.js file in a specific component folder and storing all your export logic into it you
+can avoid redundancy im import statements.
