@@ -1,0 +1,16 @@
+[2020-11-12]
+
+Today I was brainstorming for various project ideas. One thing that I tried to think of were
+things I used in my every day life that I would like to improve. One thing I thought about that I
+wanted to improve would be notetaking. I am currently using vscode with the Notes extension to take
+notes and I think it's alright so far but it definitely is an eccentric way of taking notes. The main
+reason why I'm taking notes this way is because I really prefer to do all my writing with a text editor
+that supports vim and code syntax highlighting because I like to write code in my notes. One popular
+note taking application I took a look at and tried out was Evernote. I really liked the UI of Evernote,
+it looks really sleek and minimalistic. I would actually use Evernote to take notes if it wasn't for
+one thing, and that is because I can't write my notes in vim and from I know from a couple of minutes of
+inspecting all the functionalities, you can't write nice formatted code with it. It also doesn't
+let you write in markdown which is something I've always wanted to use for my notetaking. Because of
+this I now have a good project idea and that is to make an Evernote clone where its editor lets you
+write in markdown, supports code snippets with syntax highlighting and has the option to let
+you write in vim.

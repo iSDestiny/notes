@@ -1,0 +1,26 @@
+-= Evernote Clone for Programmers =-
+
+Description:
+App similar to evernote but instead of supporting only rich text it will support writing in markdown
+too with full code syntax highlighting. I also wish to implement vim into the text editor because I
+love writing my notes in vim which is why I don't really write my notes with rich text editors
+
+Features (Priority Desc):
+- Markdown text editor
+- Code Syntax Highlighting for snippets
+- Folders
+- Authentication
+- Rich Text Support
+- Dark Theme/Light Theme (Depends on what the default is)
+
+Tech Stack:
+- Frontend:
+    - React
+    - styled-components
+    - Redux
+    - Material-UI (Maybe)
+- Backend:
+    - Node.js
+    - Express
+    - Authentication with JWT Tokens
+    - MongoDB with Mongoose ODM
