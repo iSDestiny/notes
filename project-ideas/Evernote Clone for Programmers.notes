@@ -8,10 +8,11 @@ love writing my notes in vim which is why I don't really write my notes with ric
 Features (Priority Desc):
 - Markdown text editor
 - Code Syntax Highlighting for snippets
-- Folders
+- Folders or Tagging
+- Favorites
 - Authentication
-- Rich Text Support
 - Dark Theme/Light Theme (Depends on what the default is)
+- Rich Text Support
 
 Tech Stack:
 - Frontend:
@@ -24,3 +25,8 @@ Tech Stack:
     - Express
     - Authentication with JWT Tokens
     - MongoDB with Mongoose ODM
+    - REST API
+
+Designs To Consider:
+- Evernote
+- Notable

@@ -12,6 +12,30 @@
 - Change input outline: input:focus {outline-color: color}
 - Remember box sizing: box-sizing: border-box
 
+== Box Shadow ==
+
+[css]
+.box {
+/* offset-x | offset-y | color */
+box-shadow: 10px 10px teal;
+
+/* can position box shadow to the left and above by using negative values*/
+box-shadow: -10px -10px beige;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 10px 20px teal;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.3);
+
+/* Insert box shadow inside inset | offset-x | offset-y | color */
+box-shadow: inset 10px 10px teal;
+
+/* Multiple Shadows */
+box-shadow: 10px 10px teal, -3px -3px 20px red;
+}
+[end]
+
 == Flexbox ==
 
 flex-direction:
@@ -45,11 +69,11 @@ Sets the width ratio of a flex item compared to other items
 
 Shorthand:
 [css]
-    flex-container {
-        display: flex;
-        /* grow shrink basis */
-        flex: 1 0 200px;
-    }
+flex-container {
+    display: flex;
+    /* grow shrink basis */
+    flex: 1 0 200px;
+}
 [end]
 
 == Media Queries ==
