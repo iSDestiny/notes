@@ -24,7 +24,12 @@ is rerendered which is not what we want because if this happens then useEffect g
 everytime Component1 is rerendered. By using useCallback it eliminates this problem as it will save
 the function on the first render and will not recreate it for future rerenders.
 
+**Also used when passing in a function as a prop to a memoized child component.**
+
 -= useMemo -=
+**Required to be used in a situation where you are passing an object to a child component that is memoized as objects, like
+functions are only shallowly copied if passed directly to a child component.**
+
 Very similar in functionality as useCallback but it does not return a function. Same as useCallback
 it takes in a function as its input but instead of return that function it calls that function and returns
 the end value. You can use useMemo is similar situations as useCallback, it does the same thing and that is
