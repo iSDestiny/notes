@@ -27,3 +27,11 @@ Authentication library for next.js
 ## [Jest.js](https://jestjs.io/)
 
 Default tesing framework for react
+
+## [React Resize Panel](https://www.npmjs.com/package/react-resize-panel)
+
+Simple react component for resizable panels
+
+## [React Resize Detector](https://www.npmjs.com/package/react-resize-detector)
+
+Simple react component wrapper that lets you handle resize events of any component

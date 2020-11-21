@@ -27,7 +27,6 @@ const db = mongoose.connection;
 db.once('ready', () =>
     console.log(`connected to mongo on ${process.env.MONGO_URI}`)
 );
-
 export default connectDB;
 ```
 
