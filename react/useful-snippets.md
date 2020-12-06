@@ -141,3 +141,32 @@ app.prepare().then(() => {
     });
 });
 ```
+
+JWT
+
+```javascript
+// TokenExpiredError
+jwt.verify(token, 'shhhhh', function (err, decoded) {
+    if (err) {
+        /*
+      err = {
+        name: 'TokenExpiredError',
+        message: 'jwt expired',
+        expiredAt: 1408621000 (ExpDate)
+      }
+    */
+    }
+});
+
+// JsonWebTokenError
+jwt.verify(token, 'shhhhh', function (err, decoded) {
+    if (err) {
+        /*
+      err = {
+        name: 'JsonWebTokenError',
+        message: 'jwt malformed'
+      }
+    */
+    }
+});
+```

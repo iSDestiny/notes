@@ -1,5 +1,9 @@
 # Useful libraries for React
 
+## [Cloudinary](https://cloudinary.com/)
+
+Good way to host images for you application
+
 ## [React Query](https://react-query.tanstack.com/)
 
 Very useful library for data fetching. Will use this instead of axios from now on. On top of fetching the data
