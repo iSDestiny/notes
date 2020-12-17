@@ -11,8 +11,7 @@ as something like the landing page or an about page.
 
 ## IMPORTANT
 
-+ Redirects from server on a fetch request will trigger CORS! MUST USE HREF IF IT DOES THIS LIKE FOR OAUTH REDIRECTS!
-
+-   Redirects from server on a fetch request will trigger CORS! MUST USE HREF IF IT DOES THIS LIKE FOR OAUTH REDIRECTS!
 
 ## pages
 
