@@ -170,3 +170,13 @@ jwt.verify(token, 'shhhhh', function (err, decoded) {
     }
 });
 ```
+
+```jsx
+const Component = (props) => {
+    return (
+        <div>
+            <h1> React is awesome </h1>
+        </div>
+    );
+};
+```
