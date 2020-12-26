@@ -76,3 +76,14 @@ This file is executed on the server (node.js) and as well as on the client.
     return { ...initialProps }
   }
 ```
+
+## dynamic imports
+
+Frontend libraries (stuff that interacts with the window or document) need to be dynamically imported with ssr turned off
+or it will cause errors and will not work because the window/document
+is not available initially with ssr.
+
+```javascript
+import dynamic from 'next/dynamic';
+const AceReact = dynamic(() => import('./AceReact'), { ssr: false });
+```
